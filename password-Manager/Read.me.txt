@@ -1,0 +1,17 @@
+This code creates a Password Manager application using the Tkinter library for the graphical user interface and JSON for data storage. Here's a more detailed summary:
+
+Search Functionality:
+
+The search_click function allows users to search for saved credentials by website name.
+It reads the data from a JSON file (data.json) and displays the email and password if the website is found.
+If the file is not found or the website does not exist in the data, it shows an appropriate error message.
+Password Generator:
+
+The gen_click function generates a random password.
+It combines letters, numbers, and special characters in random quantities and shuffles them to create a secure password.
+The generated password is displayed in the password entry field.
+Save Password:
+
+The add_click function allows users to save website credentials (website, email, and password) to a JSON file.
+It checks if the fields are filled, asks for user confirmation to save the data, and handles file reading/writing.
+If the JSON file does not exist, it creates a new one and adds the data. If it exists, it updates the existing data with new entries.
